@@ -4,9 +4,9 @@
 
 ## 📰 News
 
-**[2024.09.15]** 🎈Everyone can download the ADED dataset, the data is stored on BaiduNetdisk, from 
+**[2024.10.15]** 🎈We have completed the training of the model and verified that it successfully enables the model to adapt to the rainy scenario. 
 
-**[2024.10.17]** 🎈We propose $VP^2Net$, which is a visual dual perception-inspired network for exploring the causes of driver’s attention shifts.
+**[2024.12.07]** 🎈We have conducted more detailed experiments, performing both qualitative and quantitative comparisons with other advanced methods, as well as a parameter comparison.
 
 **[2024.12.16]** 🎈We will submit the article to ***ICME*** (IEEE International Conference on Multimedia and Expo ).😃
 
@@ -77,13 +77,14 @@
 
 ## 🚀Visualisation of intermediate results
 >Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy). The circles highlight objects/areas in the driving scene that disrupt the driver's attention.
-<img src="pic\AM.png" style="zoom:80%;" />
+
+<img src="pic\AM.png" width="800" height=auto />
+
 
 
 >Visualization results of rainy weather forecast under complex scenarios, yellow circles indicate unrelated factors that may capture the driver's attention, including (a) The wiper blocks the line of sight, (b) Reflection from stagnant water, (c) Glare in the taillights of vehicles ahead in dim light.
 
-
-<img src="pic\11.png" style="zoom:60%;" />
+<img src="pic\11.png" width="500" height=auto />
 
 
 
