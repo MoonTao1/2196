@@ -46,6 +46,54 @@
 </div>
 <img src="pic\12.png" style="zoom:100%;" />
 
+<div align="center">
+<table style="width: 100%; table-layout: auto;">
+  <tr>
+    <th>TrafficGaze</th>
+    <th>DrFixD-rainy</th>
+  </tr>
+  <tr>
+    <td>
+      ./TrafficGaze<br>
+      &emsp;&emsp;|——fixdata<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;&emsp;|——trafficframe<br>
+      &emsp;&emsp;|&emsp;&emsp;|——01<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——02<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——16<br>
+      &emsp;&emsp;|——test.json<br>
+      &emsp;&emsp;|——train.json<br>
+      &emsp;&emsp;|——valid.json
+    </td>
+    <td>
+      ./DrFixD-rainy<br>
+      &emsp;&emsp;|——fixdata<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata1.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata2.mat<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——fixdata16.mat<br>
+      &emsp;&emsp;|——trafficframe<br>
+      &emsp;&emsp;|&emsp;&emsp;|——01<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|——000001.jpg<br>
+      &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——02<br>
+      &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+      &emsp;&emsp;|&emsp;&emsp;|——16<br>
+      &emsp;&emsp;|——test.json<br>
+      &emsp;&emsp;|——train.json<br>
+      &emsp;&emsp;|——valid.json
+    </td>
+  </tr>
+</table>
+</div>
+
+
 ## 🚀 Quantitative Analysis
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
@@ -78,7 +126,7 @@
 ## 🚀Visualisation of intermediate results
 >Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy). The circles highlight objects/areas in the driving scene that disrupt the driver's attention.
 
-<img src="pic\AM.png" width="800" height=auto />
+<img src="pic\AM.png" width="1000" height=auto />
 
 
 
@@ -86,36 +134,18 @@
 
 <img src="pic\11.png" width="500" height=auto />
 
+## 🛠️ Deployment **[🔁](#🔥Update)**
 
+### 	Run train 
 
+​	👉*If you wish to train with our model, please use the proceeding steps below.*
 
-## 📝Model Zoo
+1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`--b` sets batch size, `--g` sets id of cuda.
 
-We give the weights obtained by training in the paper. Includes weights from ablation experiments. These weights may be able to be used as your pre-training weights, reducing the time required for learning.
+```python
+python train.py --network xxx --b 32 --g 0 --category xxx --root xxx
+```
 
-| Model                | pth           | Model                     | pth           |
-| -------------------- | ------------- | ------------------------- | ------------- |
-| $VP^2Net$            | [BaiduYun][2] | $VP^2Net$ w/ Add          | [BaiduYun][6] |
-| $VP^2Net$ w/ offline | [BaiduYun][3] | $VP^2Net$ w/ Add-Multiply | [BaiduYun][7] |
-| $VP^2Net$ w/ online  | [BaiduYun][2] | $VP^2Net$ w/ DER-Net      | [BaiduYun][8] |
-| $VP^2Net$ w/o APE    | [BaiduYun][5] | $VP^2Net$ w/ (2D)         | [BaiduYun][9] |
-| $VP^2Net$ w/o PEM    | [BaiduYun][5] | $VP^2Net$ w/ (3D)         | [BaiduYun][2] |
-
-[2]: https://pan.baidu.com/s/1YgmhD9Nq8AAkEKrXYsMTDA?pwd=V2PN "V2PNet"
-[3]: https://pan.baidu.com/s/1WdVunAkihHX9DZPGDga38Q?pwd=V2PN "offline"
-[5]: https://pan.baidu.com/s/1lG9Cn7l8TjcA9C28Ukq7xQ?pwd=V2PN "w/o pem"
-[6]: https://pan.baidu.com/s/18TFOhjXw-FqdNFkaLjjLDQ?pwd=V2PN "w/ add"
-[7]: https://pan.baidu.com/s/1OD_xuD2X0OOgGNk13RnEog?pwd=V2PN "w/ add-multiply"
-[8]:https://pan.baidu.com/s/1Wb_mTrpTx0A5LqPLXvRenA?pwd=V2PN "DER-Net"
-[9]: https://pan.baidu.com/s/1QaHok0aCX94tcCAKUldm3Q?pwd=V2PN "w/ 2d"
-
-
-
-## 💖Support the Project
-
-Thanks to the open-source video action detection models (ViViT, VideoMAE) at [huggingface🤗][10]  for supporting this paper.
-
-[10]: https://huggingface.curated.co/	"huggingface"
 
 ## 📄Cite
 
