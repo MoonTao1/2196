@@ -6,7 +6,7 @@
 
 **[2024.09.15]** 🎈Everyone can download the ADED dataset, the data is stored on BaiduNetdisk, from 
 
-**[2024.010.17]** 🎈We propose $VP^2Net$, which is a visual dual perception-inspired network for exploring the causes of driver’s attention shifts.
+**[2024.10.17]** 🎈We propose $VP^2Net$, which is a visual dual perception-inspired network for exploring the causes of driver’s attention shifts.
 
 **[2024.12.16]** 🎈We will submit the article to ***ICME*** (IEEE International Conference on Multimedia and Expo ).😃
 
