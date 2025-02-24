@@ -1,6 +1,6 @@
 import argparse
 
-parser = argparse.ArgumentParser('SalMAE plus training', add_help=False)
+parser = argparse.ArgumentParser('training', add_help=False)
 parser.add_argument('--network', default='salmae', type=str)
 parser.add_argument('-j', '--num_workers', default=4, type=int, metavar='N',
                     help='number of data loading workers (default: 16)')
@@ -18,7 +18,7 @@ parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum')
 parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,
                     metavar='W', help='weight decay (default: 1e-4)')
-parser.add_argument('--resume', default='/data9102/workspace/mwt/DANN-dual/model_epoch_21.tar', type=str, metavar='PATH',
+parser.add_argument('--resume', default='/data/workspace/model_epoch_21.tar', type=str, metavar='PATH',
                     help='path to latest checkpoint (default: none)')
 parser.add_argument('--split', default=0, type=int)
 '''
@@ -31,6 +31,6 @@ parser.add_argument('--img_shape', default=(256, 256), type=lambda s: tuple(map(
 parser.add_argument('--category', default='night', type=str, help='select [BDDA or TrafficGaze or DrFixD_rainy]')
 # parser.add_argument('--category_night', default='night', type=str, help='select [BDDA or TrafficGaze or DrFixD_rainy]')
 # DrFixD_rainy salmm
-# parser.add_argument('--root', default='/data/workspace/mwt/traffic_dataset/', type=str)
-# parser.add_argument('--root_rainy', default='/data/workspace/zcm/dataset/DrFixD-rainy/', type=str)
-parser.add_argument('--root', default='/data9102/workspace/mwt/dataset/night/', type=str)
+# parser.add_argument('--root', default='/data/workspace/traffic_dataset/', type=str)
+# parser.add_argument('--root_rainy', default='/data/workspac/dataset/DrFixD-rainy/', type=str)
+parser.add_argument('--root', default='/data/workspace/dataset/night/', type=str)
