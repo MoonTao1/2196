@@ -22,6 +22,10 @@
 ## 💻Dataset
 
 <div align="center">
+<img src="pic\12.png" width="700" height="auto" />
+</div>
+
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -46,9 +50,6 @@
     </tr>
   </tbody>
 </table>
-</div>
-<div align="center">
-<img src="pic\12.png" width="700" height="auto" />
 </div>
 
 
