@@ -297,7 +297,7 @@
 1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, --b` sets batch size, `--g sets id of cuda.
 
 ```python
-python train.py --network xxx --b 32 --g 0 --category xxx --root xxx
+python main.py --network xxx --b 32 --g 0 --category xxx --root xxx
 ```
 
 
