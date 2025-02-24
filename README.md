@@ -48,7 +48,7 @@
 </table>
 </div>
 <div align="center">
-<img src="pic\12.png" width="1000" height="auto" />
+<img src="pic\12.png" width="700" height="auto" />
 </div>
 
 
