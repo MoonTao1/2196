@@ -14,7 +14,7 @@ def main():
     root = '/data/workspace/dataset/DrFixD-rainy/trafficframe'
     test_imgs = [json.loads(line) for line in open(root + '/test_pic.json')]
 
-    # 设置目标目录为 '/data9102/workspace/mwt/dataset/night/ty'
+
     data_dir = '/data9102/workspace/dataset'
 
     # 遍历每个图像路径
