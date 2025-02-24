@@ -89,7 +89,7 @@ def build_dataset(args=None):
 
 if __name__ == '__main__':
     import argparse
-    parser = argparse.ArgumentParser('SalMAE training', add_help=False)
+    parser = argparse.ArgumentParser('training', add_help=False)
     parser.add_argument('--batch_size', default=2, type=int)
     parser.add_argument('--workers', default=10, type=int)
     parser.add_argument('--seq_len', default=2, type=int)
