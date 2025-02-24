@@ -18,7 +18,7 @@ parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum')
 parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,
                     metavar='W', help='weight decay (default: 1e-4)')
-parser.add_argument('--resume', default='/data9102/workspace/mwt/DANN-dual/model_epoch_21.tar', type=str, metavar='PATH',
+parser.add_argument('--resume', default='/data/workspace/model_epoch_21.tar', type=str, metavar='PATH',
                     help='path to latest checkpoint (default: none)')
 parser.add_argument('--split', default=0, type=int)
 '''
