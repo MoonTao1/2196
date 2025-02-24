@@ -102,7 +102,7 @@ def main():
         else:
             print("=> no checkpoint found at '{}'".format(args.resume))
 
-    # D:/Install/PyCharm Community/pythonProject/CDNN_R
+
     root = 'E:/pycharm/Project//traffic_dataset/traffic_frames/'  ### traffic_frames root
     test_imgs = [json.loads(line) for line in open(root + 'n_test.json')]
     test_loader = DataLoader(
@@ -210,7 +210,7 @@ if __name__ == '__main__':
     file_name = os.path.join(ckpts, 'model_epoch_3.tar')
     checkpoint = torch.load(file_name)
 
-    root = 'E:/pycharm/Project/CDNN-traffic-saliency-master/traffic_dataset/traffic_frames/'
+    root = 'E:/pycharm/Project/saliency-master/traffic_dataset/traffic_frames/'
     test_imgs = [json.loads(line) for line in open(root + 'n_test.json')]
     test_loader = DataLoader(
         ImageList(root, test_imgs),
@@ -222,7 +222,7 @@ if __name__ == '__main__':
     out_img = targets[0]
     print(type(out_img))
     print(out_img.shape)
-    orig_Img = cv2.imread('E:/pycharm/Project/CDNN-traffic-saliency-master/traffic_dataset/traffic_frames/1464.jpg')
+    orig_Img = cv2.imread('E:/pycharm/Project/saliency-master/traffic_dataset/traffic_frames/1464.jpg')
     orig_Img = cv2.resize(orig_Img, (320, 192), interpolation=cv2.INTER_CUBIC)
     print(type(orig_Img))
     plt.subplot(121)
