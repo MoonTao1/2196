@@ -104,7 +104,7 @@
 ## 🚀 Quantitative Analysis
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
-<div style="text-align: center;">
+<div align="center">
   <table border="1" style="margin: 0 auto;">
     <thead>
       <tr>
@@ -217,10 +217,10 @@
 
 
 
+
 >COMPARISION OF FPS AND PARAMETERS
 
-
-<div style="text-align: center;">
+<div align="center">
   <table border="1" style="margin: 0 auto;">
     <thead>
       <tr>
@@ -268,6 +268,7 @@
     </tbody>
   </table>
 </div>
+
 
 
 ## 🚀Visualisation of intermediate results
