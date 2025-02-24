@@ -15,7 +15,7 @@ def main():
     test_imgs = [json.loads(line) for line in open(root + '/test_pic.json')]
 
 
-    data_dir = '/data9102/workspace/dataset'
+    data_dir = '/data/workspace/dataset'
 
     # 遍历每个图像路径
     for img_name in tqdm(test_imgs, desc="Prepare Images"):
