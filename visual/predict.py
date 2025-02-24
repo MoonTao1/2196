@@ -103,7 +103,7 @@ def main():
             print("=> no checkpoint found at '{}'".format(args.resume))
 
     # D:/Install/PyCharm Community/pythonProject/CDNN_R
-    root = 'E:/pycharm/Project/CDNN-traffic-saliency-master/traffic_dataset/traffic_frames/'  ### traffic_frames root
+    root = 'E:/pycharm/Project//traffic_dataset/traffic_frames/'  ### traffic_frames root
     test_imgs = [json.loads(line) for line in open(root + 'n_test.json')]
     test_loader = DataLoader(
             ImageList(root, test_imgs),
