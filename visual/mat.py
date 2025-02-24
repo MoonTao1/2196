@@ -10,11 +10,11 @@ from tqdm import tqdm
 
 def main():
     args = parser.parse_args()
-    root = '/data/workspace/zcm/dataset/DrFixD-rainy/trafficframe'
+    root = '/data/workspace/dataset/DrFixD-rainy/trafficframe'
     test_imgs = [json.loads(line) for line in open(root + '/test_pic.json')]
 
-    # 设置目标目录为 '/data9102/workspace/mwt/dataset/night/ty'
-    data_dir = '/data9102/workspace/mwt/dataset/night/ICME readme'
+    # 设置目标目录为 '/data/workspace/dataset/night/ty'
+    data_dir = '/data/workspace/dataset'
 
     # 遍历每个图像路径
     for img_name in tqdm(test_imgs, desc="Prepare Images"):
@@ -65,7 +65,7 @@ def main():
 
 def getLabel(root, vid_index, frame_index):
     # 构建 .mat 文件的路径
-    fixdatafile = os.path.join('/data/workspace/zcm/dataset/DrFixD-rainy/', 'fixdata', f'fixdata{vid_index}.mat')
+    fixdatafile = os.path.join('/data/workspace/dataset/DrFixD-rainy/', 'fixdata', f'fixdata{vid_index}.mat')
 
     # 加载 .mat 文件
     if os.path.exists(fixdatafile):
