@@ -12,7 +12,10 @@
 
 ## ✨Model
 
-<img src="pic\model3.png" style="zoom:70%;" />
+<div align="center">
+<img src="pic\model3.png" width=1000" height="auto" />
+</div>
+
 
 >The architecture of the proposed model. The model consists of three structures, two feature extractors with shared parameters, a predictor and a domain adaptation module. The target domain data does not pass through the predictor, and only the source domain data passes through the predictor to calculate the loss value. The data of the two domains need to go through the domain classifier for domain discrimination, and a classification loss is obtained.
 
@@ -44,11 +47,15 @@
   </tbody>
 </table>
 </div>
-<img src="pic\12.png" style="zoom:100%;" />
 
 <div align="center">
-<table style="width: 100%; table-layout: auto;">
-  <tr>
+<img src="pic\12.png" width="800" height="auto" />
+</div>
+
+
+<div align="center">
+<table>
+<tr>
     <th>TrafficGaze</th>
     <th>DrFixD-rainy</th>
   </tr>
@@ -97,42 +104,188 @@
 ## 🚀 Quantitative Analysis
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
-| Model      | AUC B↑     | AUC J↑     | NSS↑       | CC↑        | SIM↑       | KLD↓       |
-| ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| Itti       | 0.8426     | 0.8570     | 1.5569     | 0.3695     | 0.2702     | 1.6868     |
-| ImageSig   | 0.6368     | 0.6912     | 0.5298     | 0.1404     | 0.1781     | 2.4159     |
-| HFT        | 0.7670     | 0.7867     | 1.0077     | 0.2311     | 0.2240     | 2.0079     |
-| DDC        | 0.7359     | 0.7608     | 0.9433     | 0.2492     | 0.2454     | 1.8950     |
-| Deep Coral | 0.7132     | 0.7680     | 1.1630     | 0.3135     | 0.2909     | 1.8543     |
-| DRCN       | 0.6021     | 0.7676     | 0.8007     | 0.2307     | 0.2688     | 2.5432     |
-| AT         | 0.7498     | 0.7440     | 0.9608     | 0.2578     | 0.2634     | 1.7583     |
-| CPFE       | 0.8147     | 0.9201     | 2.5645     | 0.5720     | 0.4722     | 1.0185     |
-| FBL        | 0.8172     | **0.9395** | **3.7492** | 0.7279     | 0.5716     | 0.7778     |
-| Ours       | **0.8612** | 0.9320     | 3.3928     | **0.7442** | **0.5965** | **0.7510** |
+<div style="text-align: center;">
+  <table border="1" style="margin: 0 auto;">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>AUC_B↑</th>
+        <th>AUC_J↑</th>
+        <th>NSS↑</th>
+        <th>CC↑</th>
+        <th>SIM↑</th>
+        <th>KLD↓</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Itti</td>
+        <td>0.8426</td>
+        <td>0.8570</td>
+        <td>1.5569</td>
+        <td>0.3695</td>
+        <td>0.2702</td>
+        <td>1.6868</td>
+      </tr>
+      <tr>
+        <td>ImageSig</td>
+        <td>0.6368</td>
+        <td>0.6912</td>
+        <td>0.5298</td>
+        <td>0.1404</td>
+        <td>0.1781</td>
+        <td>2.4159</td>
+      </tr>
+      <tr>
+        <td>HFT</td>
+        <td>0.7670</td>
+        <td>0.7867</td>
+        <td>1.0077</td>
+        <td>0.2311</td>
+        <td>0.2240</td>
+        <td>2.0079</td>
+      </tr>
+      <tr>
+        <td>DDC</td>
+        <td>0.7359</td>
+        <td>0.7608</td>
+        <td>0.9433</td>
+        <td>0.2492</td>
+        <td>0.2454</td>
+        <td>1.8950</td>
+      </tr>
+      <tr>
+        <td>Deep Coral</td>
+        <td>0.7132</td>
+        <td>0.7680</td>
+        <td>1.1630</td>
+        <td>0.3135</td>
+        <td>0.2909</td>
+        <td>1.8543</td>
+      </tr>
+      <tr>
+        <td>DRCN</td>
+        <td>0.6021</td>
+        <td>0.7676</td>
+        <td>0.8007</td>
+        <td>0.2307</td>
+        <td>0.2688</td>
+        <td>2.5432</td>
+      </tr>
+      <tr>
+        <td>AT</td>
+        <td>0.7498</td>
+        <td>0.7440</td>
+        <td>0.9608</td>
+        <td>0.2578</td>
+        <td>0.2634</td>
+        <td>1.7583</td>
+      </tr>
+      <tr>
+        <td>CPFE</td>
+        <td>0.8147</td>
+        <td>0.9201</td>
+        <td>2.5645</td>
+        <td>0.5720</td>
+        <td>0.4722</td>
+        <td>1.0185</td>
+      </tr>
+      <tr>
+        <td>FBL</td>
+        <td>0.8172</td>
+        <td><strong>0.9395</strong></td>
+        <td><strong>3.7492</strong></td>
+        <td>0.7279</td>
+        <td>0.5716</td>
+        <td>0.7778</td>
+      </tr>
+      <tr>
+        <td>Ours</td>
+        <td><strong>0.8612</strong></td>
+        <td>0.9320</td>
+        <td>3.3928</td>
+        <td><strong>0.7442</strong></td>
+        <td><strong>0.5965</strong></td>
+        <td><strong>0.7510</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
 
 >COMPARISION OF FPS AND PARAMETERS
 
 
-| Model      | Parameter | FPS        |
-| ---------- | --------- | ---------- |
-| DDC        | **9.90M** | 82.91      |
-| Deep Coral | 378.17M   | 35.85      |
-| DRCN       | 191.70M   | 95.14      |
-| AT         | 11.20M    | 170.78     |
-| CPFE       | 16.38M    | 46.76      |
-| FBL        | 87.48M    | 33.19      |
-| Ours       | **9.90M** | **173.79** |
+<div style="text-align: center;">
+  <table border="1" style="margin: 0 auto;">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Parameter</th>
+        <th>FPS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DDC</td>
+        <td><strong>9.90M</strong></td>
+        <td>82.91</td>
+      </tr>
+      <tr>
+        <td>Deep Coral</td>
+        <td>378.17M</td>
+        <td>35.85</td>
+      </tr>
+      <tr>
+        <td>DRCN</td>
+        <td>191.70M</td>
+        <td>95.14</td>
+      </tr>
+      <tr>
+        <td>AT</td>
+        <td>11.20M</td>
+        <td>170.78</td>
+      </tr>
+      <tr>
+        <td>CPFE</td>
+        <td>16.38M</td>
+        <td>46.76</td>
+      </tr>
+      <tr>
+        <td>FBL</td>
+        <td>87.48M</td>
+        <td>33.19</td>
+      </tr>
+      <tr>
+        <td>Ours</td>
+        <td><strong>9.90M</strong></td>
+        <td><strong>173.79</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ## 🚀Visualisation of intermediate results
 >Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy). The circles highlight objects/areas in the driving scene that disrupt the driver's attention.
 
-<img src="pic\AM.png" width="1000" height=auto />
+<div align="center">
+<img src="pic\AM.png" width="1200" height="auto" />
+</div>
 
 
 
 >Visualization results of rainy weather forecast under complex scenarios, yellow circles indicate unrelated factors that may capture the driver's attention, including (a) The wiper blocks the line of sight, (b) Reflection from stagnant water, (c) Glare in the taillights of vehicles ahead in dim light.
 
-<img src="pic\11.png" width="500" height=auto />
+<div align="center">
+<img src="pic\11.png" width="600" height="auto" />
+</div>
+
+
 
 ## 🛠️ Deployment **[🔁](#🔥Update)**
 
@@ -140,7 +293,7 @@
 
 ​	👉*If you wish to train with our model, please use the proceeding steps below.*
 
-1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`--b` sets batch size, `--g` sets id of cuda.
+1. Train our model.  You can use `--category` to switch datasets, which include `TrafficGaze`, `DrFixD-rainy`, --b` sets batch size, `--g sets id of cuda.
 
 ```python
 python train.py --network xxx --b 32 --g 0 --category xxx --root xxx
