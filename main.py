@@ -33,7 +33,7 @@ warnings.simplefilter("ignore")
 args = parser.parse_args()
 # workers default = 4
 
-ckpts = '/data9102/workspace/mwt/DANN-iter'
+ckpts = '/data/workspace/iter'
 
 log_file = os.path.join(ckpts + "/train_log.txt")
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename=log_file)
@@ -53,7 +53,7 @@ def main():
 
     train_rainy_loader, valid_rainy_loader, test_rainy_loader = build_dataset(args=args)
     args.category = 'TrafficGaze'
-    args.root = '/data/workspace/mwt/traffic_dataset/'
+    args.root = '/data/workspace/traffic_dataset/'
     train_loader, valid_loader, _ = build_dataset(args=args)
     print(len(train_loader))
     print(len(train_rainy_loader))
@@ -62,8 +62,8 @@ def main():
     params = model.parameters()
     cudnn.benchmark = True
     optimizer = torch.optim.Adam(params, args.lr, weight_decay=args.weight_decay)
-    # root = '/data/workspace/mwt/traffic_dataset/trafficframe/'
-    # root1 = '/data/workspace/zcm/dataset/DrFixD-rainy/trafficframe/'
+    # root = '/data/workspace/traffic_dataset/trafficframe/'
+    # root1 = '/data/workspace/dataset/DrFixD-rainy/trafficframe/'
     # train_imgs = [json.loads(line) for line in open(root + 'train.json')]
     # train_rain_imgs = [json.loads(line) for line in open(root1 + 'train.json')]
     # valid_imgs = [json.loads(line) for line in open(root + 'valid.json')]
