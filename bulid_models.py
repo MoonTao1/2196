@@ -1,4 +1,4 @@
-from model_cdnn import Model
+from model import Model
 import torch
 from utils.options import parser
 args = parser.parse_args()
