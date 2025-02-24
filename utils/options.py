@@ -1,7 +1,7 @@
 import argparse
 
 parser = argparse.ArgumentParser('training', add_help=False)
-parser.add_argument('--network', default='salmae', type=str)
+parser.add_argument('--network', default='model', type=str)
 parser.add_argument('-j', '--num_workers', default=4, type=int, metavar='N',
                     help='number of data loading workers (default: 16)')
 parser.add_argument('--epochs', default=100, type=int, metavar='N',
