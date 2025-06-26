@@ -4,11 +4,11 @@
 
 ## 📰 News
 
-**[2024.10.15]** 🎈We have completed the training of the model and verified that it successfully enables the model to adapt to the rainy scenario. 
+**[2025.2.15]** 🎈We have completed the training of the model and verified that it successfully enables the model to adapt to the rainy scenario. 
 
-**[2024.12.07]** 🎈We have conducted more detailed experiments, performing both qualitative and quantitative comparisons with other advanced methods, as well as a parameter comparison.
+**[2025.4.07]** 🎈We have conducted more detailed experiments, performing both qualitative and quantitative comparisons with other advanced methods, as well as a parameter comparison.
 
-**[2024.12.16]** 🎈We will submit the article to ***ICME*** (IEEE International Conference on Multimedia and Expo ).😃
+**[2025.5.26]** 🎈We will submit the article to ***PRCV*** (The 8th Chinese Conference on Pattern Recognition and Computer Vision).😃
 
 ## ✨Model
 
